@@ -28,10 +28,11 @@ router.post('/', (req, res) => {
 			fs.writeFile(
 				path.join(__dirname, '../db/db.json'),
 				JSON.stringify(notesArr, null, 4),
-				(writeErr) =>
-					writeErr
-						? console.error(writeErr)
-						: console.info('Successfully updated notes!')
+				(writeErr) => {
+					if (writeErr) {
+						console.error(writeErr);
+					}
+				}
 			);
 			const response = {
 				"status": "success",
@@ -49,18 +50,19 @@ router.delete('/:id', (req, res) => {
 			console.error(err);
 		} else {
 			let notesArr = JSON.parse(data);
-			for (let i = 0; i<notesArr.length; i++) {
-				if ( notesArr[i].id === id ) {
+			for (let i = 0; i < notesArr.length; i++) {
+				if (notesArr[i].id === id) {
 					notesArr.splice(i, 1);
 				}
 			}
 			fs.writeFile(
 				path.join(__dirname, '../db/db.json'),
 				JSON.stringify(notesArr, null, 4),
-				(writeErr) =>
-					writeErr
-						? console.error(writeErr)
-						: console.info('Successfully updated notes!')
+				(writeErr) => {
+					if (writeErr) {
+						console.error(writeErr);
+					}
+				}
 			);
 			const response = {
 				"status": "success",

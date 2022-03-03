@@ -1,12 +1,17 @@
 [
     {
-        "id": "70b1183c-817d-4a77-b76e-44bef5d903fa",
-        "title": "New note",
-        "text": "Testing note creation"
+        "id": "710658ad-5564-4228-9323-2826bc260f58",
+        "title": "Initial note",
+        "text": "With a lot of text.\n"
     },
     {
-        "id": "8d7d549b-02cc-4320-8a4f-b4e42ab3a79b",
-        "title": "Writing one more",
-        "text": "Test note"
+        "id": "739cd05a-568a-4f17-93ff-3e321087d667",
+        "title": "Second note",
+        "text": "And a lot more text"
+    },
+    {
+        "id": "92a7ee65-b63a-48ab-b043-5e907a8f3f86",
+        "title": "More stuff",
+        "text": "New note"
     }
 ]
