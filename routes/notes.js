@@ -14,16 +14,19 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+	// Read existing data from file
 	const json = fs.readFile(path.join(__dirname, '../db/db.json'), 'utf-8', (err, data) => {
 		if (err) {
 			console.error(err);
 		} else {
 			let notesArr = JSON.parse(data);
+			// Create new note json including the unique id
 			let newNote = {
 				id: randomUUID(),
 				title: req.body.title,
 				text: req.body.text
 			};
+			// Push new note to the notes array before writing the data back to disk.
 			notesArr.push(newNote);
 			fs.writeFile(
 				path.join(__dirname, '../db/db.json'),
