@@ -1,6 +1,32 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "id": "70b1183c-817d-4a77-b76e-44bef5d903fa",
+        "title": "New note",
+        "text": "Testing note creation"
+    },
+    {
+        "id": "5fcd5318-7e2d-4617-af15-6dd6270fea10",
+        "title": "Second note",
+        "text": "For more fun stuff"
+    },
+    {
+        "id": "50550104-8ad7-4b2e-babe-7b974046b6f3",
+        "title": "Test diagnostics",
+        "text": "ruler text blah"
+    },
+    {
+        "id": "2479e2b2-2aba-4903-9f36-b5a5b63833a2",
+        "title": "Test diagnostics",
+        "text": "ruler text blah"
+    },
+    {
+        "id": "9605e86a-e813-4548-8dc0-6d299032f0a4",
+        "title": "Test diagnostics",
+        "text": "ruler text blah"
+    },
+    {
+        "id": "8d7d549b-02cc-4320-8a4f-b4e42ab3a79b",
+        "title": "Writing one more",
+        "text": "Test note"
     }
 ]
