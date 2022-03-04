@@ -19,6 +19,10 @@ Node app that allows note taking using your favorite web browser. You can run th
 
 ## How to use
 You can launch the application locally with 'node app.js' The app is listening on port 3001.
+You can add and delete notes as well as browse the existing notes. Below are few screenshots to show the UI.
+
+![image](https://user-images.githubusercontent.com/98463/156708881-80c1ed9d-fef3-44d2-aaf4-a29d836e851a.png)
+![image](https://user-images.githubusercontent.com/98463/156708934-612a433a-56b0-476e-93af-e627e714b336.png)
 
 
 
